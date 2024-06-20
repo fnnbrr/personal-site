@@ -1,3 +1,21 @@
-﻿.Footer {
-    padding: 15px;
+﻿.SocialButtonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.SocialButton {
+    
+}
+
+.SocialButtonImg {
+    max-height: 32px;
+}
+
+.Footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
