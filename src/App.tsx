@@ -1,22 +1,20 @@
 import React from 'react';
-import './App.css';
-import Header from "./Header";
-import Footer from "./Footer";
+import './Root.css';
+import {
+    BrowserRouter,
+    Routes,
+    Route
+} from "react-router-dom";
+import Root from "./routes/Root";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header>
-        <Header/>
-      </header>
-        <div className={"App-header"}>
-            <p>Finnbarr O'Callahan</p>
-        </div>
-      <footer>
-        <Footer/>
-      </footer>
-    </div>
+      <BrowserRouter>
+          <Routes>
+              <Route path="/" element={<Root />}>
+                  
+              </Route>
+          </Routes>
+      </BrowserRouter>
   );
 }
-
-export default App;

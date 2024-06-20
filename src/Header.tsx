@@ -1,7 +1,7 @@
-﻿import React from "react";
+import React from "react";
 import './Header.css'
 
-function Header() {
+export default function Header() {
     return (
         <div className={"Header"}>
             <a href={"https://fnnbrr.com"}>
@@ -15,5 +15,3 @@ function Header() {
         </div>
     );
 }
-
-export default Header;

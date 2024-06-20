@@ -14,7 +14,7 @@ function SocialIcon({iconUrl, redirectUrl}: SocialIconProps) {
     )
 }
 
-function Footer() {
+export default function Footer() {
     return (
         <div className="Footer">
             <div className={"SiteMapContainer"}>
@@ -43,5 +43,3 @@ function Footer() {
         </div>
     );
 }
-
-export default Footer;
