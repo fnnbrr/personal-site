@@ -24,11 +24,15 @@
 }
 
 .Footer {
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    background-color: #1f1f1f;
+    padding: 10px 20px 10px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    & text, & p, & a {
+        color: lightgrey;
+        text-underline-mode: none;
+    }
 }
