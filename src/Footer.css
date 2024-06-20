@@ -33,6 +33,5 @@
 
     & text, & p, & a {
         color: lightgrey;
-        text-underline-mode: none;
     }
 }

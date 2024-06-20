@@ -1,0 +1,18 @@
+﻿.Header {
+    background-color: #1f1f1f;
+    padding: 10px 20px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+
+    & text, & p, & a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.Logo {
+    max-height: 40px;
+}
