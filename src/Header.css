@@ -6,13 +6,18 @@
     justify-content: flex-start;
     align-items: center;
     gap: 50px;
-
-    & text, & p, & a {
-        color: white;
-        text-decoration: none;
-    }
 }
 
 .Logo {
     max-height: 40px;
+}
+
+.active {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+.inactive {
+    color: white;
+    text-decoration: none;
 }
