@@ -8,6 +8,7 @@ import {
 import Root from "./routes/Root";
 import Home from "./routes/Home";
 import MissingPage from "./routes/MissingPage";
+import Automagical from "./routes/Automagical";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Routes>
               <Route path="/" element={<Root />}>
                   <Route index element={<Home />}/>
+                  <Route path="automagical" element={<Automagical />}/>
                   <Route path="*" element={<MissingPage />}/>
               </Route>
           </Routes>
