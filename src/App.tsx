@@ -8,6 +8,7 @@ import {
 import Root from "./routes/Root";
 import Home from "./routes/Home";
 import MissingPage from "./routes/MissingPage";
+import Resume from "./routes/Resume";
 import Automagical from "./routes/Automagical";
 
 export default function App() {
@@ -16,7 +17,7 @@ export default function App() {
           <Routes>
               <Route path="/" element={<Root />}>
                   <Route index element={<Home />}/>
-                  <Route path="resume" element={<Home />}/>
+                  <Route path="resume" element={<Resume />}/>
                   <Route path="automagical" element={<Automagical />}/>
                   <Route path="tools" element={<Home />}/>
                   <Route path="contact" element={<Home />}/>
