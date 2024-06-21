@@ -2,6 +2,7 @@ import React from 'react';
 import '../Root.css';
 import Header from "../Header";
 import Footer from "../Footer";
+import { Outlet } from "react-router-dom"
 
 export default function Root() {
     return (
@@ -9,9 +10,7 @@ export default function Root() {
             <header>
                 <Header/>
             </header>
-            <div className={"Root-header"}>
-                <p>Finnbarr O'Callahan</p>
-            </div>
+            <Outlet />
             <footer>
                 <Footer/>
             </footer>

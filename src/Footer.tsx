@@ -1,5 +1,6 @@
 import React from "react";
 import './Footer.css'
+import { Link } from "react-router-dom"
 
 interface SocialIconProps {
     iconUrl: string;
@@ -18,14 +19,12 @@ export default function Footer() {
     return (
         <div className="Footer">
             <div className={"SiteMapContainer"}>
-                <a href="https://fnnbrr.com">home</a>
+                <Link to="/">home</Link>
                 <text>|</text>
-                <a href="https://fnnbrr.com">wip</a>
-                <text>|</text>
-                <a href="https://fnnbrr.com">wip</a>
+                <Link to="/">contact</Link>
             </div>
             <div>
-                <text>made by <a href="https://fnnbrr.com">fnnbrr</a></text>
+                <text>made by <Link to="/">fnnbrr</Link></text>
                 <br/>
                 <text>© 2024</text>
             </div>
