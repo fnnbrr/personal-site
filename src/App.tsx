@@ -18,7 +18,10 @@ export default function App() {
               <Route path="/" element={<Root />}>
                   <Route index element={<Home />}/>
                   <Route path="resume" element={<Resume />}/>
-                  <Route path="automagical" element={<Automagical />}/>
+                  <Route path="games" element={null}>
+                      <Route index element={<Home />}/>
+                      <Route path="automagical" element={<Automagical />}/>
+                  </Route>
                   <Route path="tools" element={<Home />}/>
                   <Route path="contact" element={<Home />}/>
                   <Route path="*" element={<MissingPage />}/>
