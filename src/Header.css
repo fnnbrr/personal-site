@@ -5,19 +5,45 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 50px;
 }
 
 .Logo {
-    max-height: 40px;
+    margin-right: 30px;
+    
+    & img {
+        max-height: 40px;
+    }
+}
+
+.dropdown-list {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    background-color: #1f1f1f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.link-dropdown {
+
+}
+
+.link-dropdown:hover .dropdown-list {
+    display: flex;
+}
+
+.header-link {
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
 }
 
 .active {
     color: deepskyblue;
-    text-decoration: none;
 }
 
 .inactive {
     color: white;
-    text-decoration: none;
 }
