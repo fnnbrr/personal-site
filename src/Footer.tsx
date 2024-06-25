@@ -18,8 +18,8 @@ function SocialIcon({iconUrl, redirectUrl}: SocialIconProps) {
 export default function Footer() {
     return (
         <div className="Footer">
-            <div className={"SiteMapContainer"}>
-                {/* TODO: what to put here? */}
+            <div className={"FooterLinks"}>
+                <a href={"https://github.com/fnnbrr/personal-site"} target="_blank" rel={"noreferrer"}>source code</a>
             </div>
             <div>
                 <text>made by <Link to="/">fnnbrr</Link></text>
