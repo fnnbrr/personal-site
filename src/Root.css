@@ -14,7 +14,9 @@ text, p, a {
 }
 
 .Root-header {
-  background-color: steelblue;
+  background:
+          linear-gradient(135deg, steelblue, transparent),
+          url("../public/noise.svg");
   min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
