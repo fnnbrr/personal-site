@@ -19,7 +19,9 @@ export default function Footer() {
     return (
         <div className="Footer">
             <div className={"SiteMapContainer"}>
-                {/*TODO: what to put here?*/}
+                <Link to="/">home</Link>
+                <text>|</text>
+                <Link to="/">contact</Link>
             </div>
             <div>
                 <text>made by <Link to="/">fnnbrr</Link></text>
