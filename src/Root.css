@@ -5,7 +5,11 @@
   font-style: normal;
 }
 
-text, p, a {
+:root {
+  color-scheme: dark;
+}
+
+text, p, a, li {
   font-family: 'OCR-A', sans-serif;
 }
 

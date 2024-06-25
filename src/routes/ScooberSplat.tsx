@@ -12,7 +12,7 @@ export default function ScooberSplat() {
             />
             <br/>
             <p>
-                A cross-platform online party game with 70k+ players and a 95% Positive rating on <a href={"https://store.steampowered.com/app/1601830/Scoober_Splat/"}>Steam</a>.
+                A cross-platform online party game with 70k+ players and a 95% Positive rating on <a href={"https://store.steampowered.com/app/1601830/Scoober_Splat/"} target="_blank" rel={"noreferrer"}>Steam</a>.
             </p>
             <br/>
             <div className={"Videos"}>
@@ -53,13 +53,14 @@ export default function ScooberSplat() {
             <p>
                 My work on Scoober Splat included:
             </p>
-            <br/>
-            <li>A custom GPU-based lighting/field-of-view rendering system</li>
-            <li>Backend features like account management, payment processing, etc.</li>
-            <li>Reverse-engineering the Photon Voice SDK to add support for WebGL</li>
-            <li>Collecting analytics and telemetry data and populating Grafana dashboards with SQL</li>
-            <li>Collaboratively designed game mechanics with a focus on tutorialization</li>
-            <li>Various UI and networked gameplay programming</li>
+            <ul>
+                <li>A custom GPU-based lighting/field-of-view rendering system</li>
+                <li>Backend features like account management, payment processing, etc.</li>
+                <li>Reverse-engineering the Photon Voice SDK to add support for WebGL</li>
+                <li>Collecting analytics and telemetry data and populating Grafana dashboards with SQL</li>
+                <li>Collaboratively designed game mechanics with a focus on tutorialization</li>
+                <li>Various UI and networked gameplay programming</li>
+            </ul>
             <br/>
         </div>
     );

@@ -1,0 +1,8 @@
+﻿.Contact {
+    justify-content: start;
+    
+    & li, & a:any-link {
+        text-align: left;
+        color: white;
+    }
+}

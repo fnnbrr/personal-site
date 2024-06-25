@@ -9,7 +9,7 @@ interface SocialIconProps {
 
 function SocialIcon({iconUrl, redirectUrl}: SocialIconProps) {
     return (
-        <a href={redirectUrl}>
+        <a href={redirectUrl} target="_blank" rel={"noreferrer"}>
             <img src={iconUrl} alt={redirectUrl} className={"SocialIconImage"}/>
         </a>
     )
@@ -19,9 +19,7 @@ export default function Footer() {
     return (
         <div className="Footer">
             <div className={"SiteMapContainer"}>
-                <Link to="/">home</Link>
-                <text>|</text>
-                <Link to="/">contact</Link>
+                {/* TODO: what to put here? */}
             </div>
             <div>
                 <text>made by <Link to="/">fnnbrr</Link></text>
