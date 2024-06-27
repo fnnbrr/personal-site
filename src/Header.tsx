@@ -2,6 +2,20 @@ import React, {ReactElement } from "react";
 import './Header.css'
 import { Link, NavLink } from "react-router-dom"
 
+function MenuHamburger() {
+    function OnClick() {
+        console.log("hi");
+    }
+    
+    return (
+        <img
+            src={"hamburger_icon_white.svg"}
+            alt={"navigation hamburger menu"}
+            className={"hamburger-button"}
+            onClick={OnClick}/>
+    )
+}
+
 interface HeaderLinkProps {
     route: string;
     label: string;
@@ -42,6 +56,8 @@ export default function Header() {
             ]}/>
             <HeaderLink route={"/tools"} label={"tools"}/>
             <HeaderLink route={"/contact"} label={"contact"}/>
+            
+            <MenuHamburger/>
         </div>
     );
 }
