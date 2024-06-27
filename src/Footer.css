@@ -33,5 +33,6 @@
 
     & text, & p, & a {
         color: lightgrey;
+        margin: 0;
     }
 }

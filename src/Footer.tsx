@@ -22,9 +22,8 @@ export default function Footer() {
                 <a href={"https://github.com/fnnbrr/personal-site"} target="_blank" rel={"noreferrer"}>source code</a>
             </div>
             <div>
-                <text>made by <Link to="/">fnnbrr</Link></text>
-                <br/>
-                <text>© 2024</text>
+                <p>made by <Link to="/">fnnbrr</Link></p>
+                <p>© 2024</p>
             </div>
             <div className={"SocialIconContainer"}>
                 <SocialIcon
