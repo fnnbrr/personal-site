@@ -18,12 +18,12 @@ function MenuHamburger({children}: PropsWithChildren) {
     return (
         <div className={"hamburger-button"}>
             <img
-                src={"hamburger_icon_white.svg"}
+                src={isExpanded ? "x-mark.svg" : "hamburger_icon_white.svg"}
                 alt={"navigation hamburger menu"}
                 onClick={OnClick}>
             </img>
             <>
-                {isExpanded ? linksVertical : <></>}
+                {isExpanded ? linksVertical : null}
             </>
         </div>
     )
