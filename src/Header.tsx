@@ -1,12 +1,26 @@
-import React, { useState, PropsWithChildren } from "react";
+import React, { useState, useEffect, useRef, PropsWithChildren, FocusEvent } from "react";
 import './Header.css'
 import { Link, NavLink } from "react-router-dom"
+import { PreloadImages } from "./Utils";
 
 function MenuHamburger({children}: PropsWithChildren) {
     const [isExpanded, setIsExpanded] = useState<boolean>(false);
+    const parent = useRef<HTMLButtonElement>(null);
+    
+    useEffect(() => {
+        PreloadImages(["hamburger_icon_white.svg", "x-mark.svg"])
+    });
     
     function OnClick(): void {
         setIsExpanded(!isExpanded);
+    }
+    
+    function OnBlur(event: FocusEvent<HTMLButtonElement>): void {
+        if (parent.current === null) return;
+        
+        if (!parent.current.contains(event.relatedTarget)) {
+            setIsExpanded(false);
+        }
     }
     
     const linksVertical = (
@@ -16,7 +30,7 @@ function MenuHamburger({children}: PropsWithChildren) {
     );
     
     return (
-        <div className={"hamburger-button"}>
+        <button ref={parent} className={"hamburger-button"} onBlur={OnBlur}>
             <img
                 src={isExpanded ? "x-mark.svg" : "hamburger_icon_white.svg"}
                 alt={"navigation hamburger menu"}
@@ -25,7 +39,7 @@ function MenuHamburger({children}: PropsWithChildren) {
             <>
                 {isExpanded ? linksVertical : null}
             </>
-        </div>
+        </button>
     )
 }
 

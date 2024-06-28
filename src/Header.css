@@ -55,10 +55,13 @@
 .hamburger-button {
     margin-left: auto;
     height: 100%;
+    background: none;
+    border: none;
 }
 
 .hamburger-button img {
     height: 100%;
+    cursor: pointer;
 }
 
 .links-horizontal {
