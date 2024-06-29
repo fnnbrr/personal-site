@@ -1,15 +1,18 @@
 import React, { useState, useEffect, useRef, PropsWithChildren, FocusEvent } from "react";
 import './Header.css'
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import { PreloadImages } from "./Utils";
+
+PreloadImages(["hamburger_icon_white.svg", "x-mark.svg"]);
 
 function MenuHamburger({children}: PropsWithChildren) {
     const [isExpanded, setIsExpanded] = useState<boolean>(false);
     const parent = useRef<HTMLButtonElement>(null);
+    let location = useLocation();
     
     useEffect(() => {
-        PreloadImages(["hamburger_icon_white.svg", "x-mark.svg"])
-    });
+        setIsExpanded(false);
+    }, [location]);
     
     function OnClick(): void {
         setIsExpanded(!isExpanded);
