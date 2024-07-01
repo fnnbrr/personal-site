@@ -47,21 +47,32 @@ function MenuHamburger({children}: PropsWithChildren) {
 }
 
 interface HeaderLinkProps {
-    route: string;
+    route?: string;
     label: string;
 }
 
 function HeaderLink({route, label, children}: PropsWithChildren<HeaderLinkProps>) {
+    const routeLabel = (
+        <NavLink
+            to={route === undefined ? "/" : route}
+            className={({isActive}) =>
+                isActive ? "link-text active" : "link-text inactive"
+            }
+        >
+            {label}
+        </NavLink>
+    );
+
+    const parentLabel = (
+        <span className={"link-text inactive parent-label"}>
+            {label}
+        </span>
+    );
+    
     return (
         <div className="link-expandable">
-            <NavLink
-                to={route}
-                className={({isActive}) =>
-                    isActive ? "link-text active" : "link-text inactive"
-                }
-            >
-                {label}
-            </NavLink>
+            {children === undefined ? null : <span className={"link-child-indicator"}>&lt;</span>}
+            {route === undefined ? parentLabel : routeLabel}
             <div className={"link-child-container"}>
                 {children}
             </div>
@@ -74,7 +85,7 @@ function HeaderLinks() {
         <>
             <HeaderLink route={"/"} label={"home"}/>
             <HeaderLink route={"/resume"} label={"resume"}/>
-            <HeaderLink route={"/games"} label={"games"}>
+            <HeaderLink label={"games"}>
                 <HeaderLink route={"/games/gunarmed"} label={"gunarmed"} key={"gunarmed"}/>
                 <HeaderLink route={"/games/automagical"} label={"Automagical"} key={"automagical"}/>
                 <HeaderLink route={"/games/scoober-splat"} label={"Scoober Splat"} key={"scoober-splat"}/>

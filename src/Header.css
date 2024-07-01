@@ -86,6 +86,12 @@
     color: white;
 }
 
+.link-child-indicator {
+    padding: 13px 0 0 15px;
+    margin-right: -10px;
+    font-size: smaller;
+}
+
 /* For wide displays where we show the horizontal navigation bar */
 @media (min-width: 700px) {
     .hamburger-button {
@@ -99,6 +105,10 @@
 
     .link-expandable {
         justify-content: center;
+    }
+
+    .link-child-indicator {
+        display: none;
     }
 }
 
@@ -118,5 +128,9 @@
     
     .hamburger-button img:hover {
         filter: drop-shadow(0px 0px 10px dodgerblue);
+    }
+    
+    .parent-label {
+        cursor: default;
     }
 }
