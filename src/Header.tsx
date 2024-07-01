@@ -27,7 +27,7 @@ function MenuHamburger({children}: PropsWithChildren) {
     }
     
     const linksVertical = (
-        <div className={"dropdown-list links-vertical"}>
+        <div className={"links-vertical"}>
             {children}
         </div>
     );
@@ -53,16 +53,16 @@ interface HeaderLinkProps {
 
 function HeaderLink({route, label, children}: PropsWithChildren<HeaderLinkProps>) {
     return (
-        <div className="link-dropdown">
+        <div className="link-expandable">
             <NavLink
                 to={route}
                 className={({isActive}) =>
-                    isActive ? "header-link active" : "header-link inactive"
+                    isActive ? "link-text active" : "link-text inactive"
                 }
             >
                 {label}
             </NavLink>
-            <div className={"dropdown-list"}>
+            <div className={"link-child-container"}>
                 {children}
             </div>
         </div>
