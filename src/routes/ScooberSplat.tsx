@@ -1,12 +1,14 @@
 import React from 'react';
 import '../Root.css'
 import './ScooberSplat.css';
+import scooberSplatLogo from "../assets/Scoober Splat Logo.png";
+import scooberRun from "../assets/Scoober Run.gif";
 
 export default function ScooberSplat() {
     return (
         <div className={"Root-header ScooberSplat"}>
             <img
-                src={"../Scoober Splat Logo.png"}
+                src={scooberSplatLogo}
                 alt={"Scoober Splat Logo"}
                 className={"ScooberSplatLogo"}
             />
@@ -45,7 +47,7 @@ export default function ScooberSplat() {
             </p>
             <br/>
             <img
-                src={"../Scoober Run.gif"}
+                src={scooberRun}
                 alt={"Scoober Run Animation"}
                 className={"ScooberSplatRun"}
             />

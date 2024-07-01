@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'OCR-A';
-  src: url("../public/fonts/OCRA.ttf") format('truetype');
+  src: url("./assets/OCRA.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -20,7 +20,7 @@ text, p, a, li {
 .Root-header {
   background:
           linear-gradient(135deg, steelblue, transparent),
-          url("../public/noise.svg");
+          url("./assets/noise.svg");
   min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;

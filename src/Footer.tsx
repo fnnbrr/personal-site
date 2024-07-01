@@ -1,6 +1,9 @@
 import React from "react";
 import './Footer.css'
 import { Link } from "react-router-dom"
+import emailIcon from "./assets/email-12-128.png";
+import linkedInIcon from "./assets/In-White-128.png";
+import githubIcon from "./assets/github-mark-white.svg";
 
 interface SocialIconProps {
     iconUrl: string;
@@ -27,13 +30,13 @@ export default function Footer() {
             </div>
             <div className={"SocialIconContainer"}>
                 <SocialIcon
-                    iconUrl={"social-icons/email-12-128.png"}
+                    iconUrl={emailIcon}
                     redirectUrl={"mailto:fnnbrr.dev@gmail.com"}/>
                 <SocialIcon
-                    iconUrl={"social-icons/In-White-128.png"}
+                    iconUrl={linkedInIcon}
                     redirectUrl={"https://www.linkedin.com/in/finnbarrocallahan/"}/>
                 <SocialIcon
-                    iconUrl={"social-icons/github-mark-white.svg"}
+                    iconUrl={githubIcon}
                     redirectUrl={"https://github.com/fnnbrr"}/>
             </div>
         </div>

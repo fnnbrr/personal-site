@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef, PropsWithChildren, FocusEvent } from "react";
 import './Header.css'
 import { Link, NavLink, useLocation } from "react-router-dom"
-import { PreloadImages } from "./Utils";
-
-PreloadImages(["hamburger_icon_white.svg", "x-mark.svg"]);
+import fnnbrrLogo from "./assets/fnnbrr_logo_outlined_2x.png";
+import hamburgerIcon from "./assets/hamburger_icon_white.svg";
+import xMark from "./assets/x-mark.svg";
 
 function MenuHamburger({children}: PropsWithChildren) {
     const [isExpanded, setIsExpanded] = useState<boolean>(false);
@@ -35,7 +35,7 @@ function MenuHamburger({children}: PropsWithChildren) {
     return (
         <button ref={parent} className={"hamburger-button"} onBlur={OnBlur}>
             <img
-                src={isExpanded ? "x-mark.svg" : "hamburger_icon_white.svg"}
+                src={isExpanded ? xMark : hamburgerIcon}
                 alt={"navigation hamburger menu"}
                 onClick={OnClick}>
             </img>
@@ -89,7 +89,7 @@ export default function Header() {
     return (
         <div className={"Header"}>
             <Link to="/" className={"Logo"}>
-                <img src={"fnnbrr_logo_outlined_2x.png"} alt={"https://fnnbrr.com"}/>
+                <img src={fnnbrrLogo} alt={"https://fnnbrr.com"}/>
             </Link>
             
             <div className={"links-horizontal"}>
