@@ -70,7 +70,7 @@ function HeaderLink({route, label, children}: PropsWithChildren<HeaderLinkProps>
     );
     
     return (
-        <div className="link-expandable">
+        <div className="link-expandable" tabIndex={0}>
             {children === undefined ? null : <span className={"link-child-indicator"}>&lt;</span>}
             {route === undefined ? parentLabel : routeLabel}
             <div className={"link-child-container"}>

@@ -55,6 +55,10 @@
     justify-content: flex-end;
 }
 
+.link-expandable:focus-within > .link-child-container {
+    display: flex;
+}
+
 .link-child-container {
     display: none;
     flex-direction: column;
