@@ -53,6 +53,12 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+
+    --link-hover-color: #313131;
+}
+
+.link-expandable:focus-within{
+    background-color: var(--link-hover-color);
 }
 
 .link-expandable:focus-within > .link-child-container {
@@ -118,16 +124,12 @@
 
 /* For devices using mice where we perform actions on hover */
 @media (pointer: fine) {
-    .link-expandable:hover > .link-child-container {
-        display: flex;
+    .link-expandable:hover{
+        background-color: var(--link-hover-color);
     }
     
-    .link-text:hover {
-        text-shadow:
-                -1px -1px 5px dodgerblue,
-                1px -1px 5px dodgerblue,
-                -1px 1px 5px dodgerblue,
-                1px 1px 5px dodgerblue;
+    .link-expandable:hover > .link-child-container {
+        display: flex;
     }
     
     .hamburger-button img:hover {

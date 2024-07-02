@@ -97,8 +97,17 @@ function HeaderLinks() {
 }
 
 export default function Header() {
+    const header = useRef<HTMLDivElement>(null);
+    let location = useLocation();
+
+    useEffect(() => {
+        // To scroll page to top and reset focus when changing routes
+        header.current?.focus();
+        header.current?.blur();
+    }, [location]);
+    
     return (
-        <div className={"Header"}>
+        <div className={"Header"} ref={header} tabIndex={0}>
             <Link to="/" className={"Logo"}>
                 <img src={fnnbrrLogo} alt={"https://fnnbrr.com"}/>
             </Link>
