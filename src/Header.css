@@ -79,7 +79,7 @@
 
 .links-vertical .link-child-container {
     right: 100%;
-    top: calc(50% - 1em - 10px);
+    top: calc(50% - 5px);
 }
 
 .link-text {
