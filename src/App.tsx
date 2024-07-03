@@ -21,7 +21,7 @@ export default function App() {
                   <Route index element={<Home />}/>
                   <Route path="resume" element={<Resume />}/>
                   <Route path="games" element={null}>
-                      <Route index element={<Home />}/>
+                      <Route index element={<MissingPage />}/>
                       <Route path="gunarmed" element={<MissingPage />}/>
                       <Route path="automagical" element={<Automagical />}/>
                       <Route path="scoober-splat" element={<ScooberSplat />}/>

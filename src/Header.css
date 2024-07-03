@@ -88,6 +88,10 @@
     white-space: nowrap;
 }
 
+.non-clickable {
+    pointer-events: none;
+}
+
 .active {
     color: deepskyblue;
 }
