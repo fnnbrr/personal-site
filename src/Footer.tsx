@@ -21,14 +21,14 @@ function SocialIcon({iconUrl, redirectUrl}: SocialIconProps) {
 export default function Footer() {
     return (
         <div className="Footer">
-            <div className={"FooterLinks"}>
+            <div className={"FooterLinks flex-non-centered"}>
                 <a href={"https://github.com/fnnbrr/personal-site"} target="_blank" rel={"noreferrer"}>source code</a>
             </div>
-            <div>
+            <div className={"flex-centered"}>
                 <p>made by <Link to="/">fnnbrr</Link></p>
                 <p>© 2024</p>
             </div>
-            <div className={"SocialIconContainer"}>
+            <div className={"SocialIconContainer flex-non-centered"}>
                 <SocialIcon
                     iconUrl={emailIcon}
                     redirectUrl={"mailto:fnnbrr.dev@gmail.com"}/>
