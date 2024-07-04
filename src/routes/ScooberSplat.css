@@ -14,7 +14,7 @@
     
     & li {
         text-align: left;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 }
 
@@ -35,7 +35,23 @@
 }
 
 .Video {
-    width: 560px;
-    height: 315px;
+    width: min(560px, 90vw);
+    aspect-ratio: 16 / 9;
     border: 0;
+}
+
+.grid {
+    column-count: 2;
+    column-width: 600px;
+    column-gap: 40px;
+    
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+    margin-left: max(15px, calc(50% - 620px));
+    margin-right: max(15px, calc(50% - 620px));
+    
+    * {
+        display: inline-block;
+    }
 }

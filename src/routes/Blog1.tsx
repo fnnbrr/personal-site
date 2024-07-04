@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import './Blogs.css'
 
 export default function Blog1() {
