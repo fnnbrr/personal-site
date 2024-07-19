@@ -42,7 +42,6 @@
     z-index: 1;
     background-color: #1f1f1f;
     top: 50px;
-    padding-bottom: 10px;
 }
 
 .links-horizontal {
@@ -74,12 +73,12 @@
     z-index: 1;
     background-color: #1f1f1f;
     top: 50px;
-    padding-bottom: 10px;
 }
 
 .links-vertical .link-child-container {
     right: 100%;
-    top: calc(50% - 5px);
+    top: auto;
+    bottom: auto;
 }
 
 .link-text {
