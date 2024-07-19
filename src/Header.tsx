@@ -81,11 +81,14 @@ function HeaderLinks() {
     return (
         <>
             <HeaderLink route={"/"} label={"home"}/>
-            <HeaderLink route={"/resume"} label={"resume"}/>
             <HeaderLink route={"/projects"} label={"projects"}>
-                <HeaderLink route={"/projects/scoober-splat"} label={"Scoober Splat"} key={"scoober-splat"}/>
-                <HeaderLink route={"/projects/automagical"} label={"Automagical"} key={"automagical"}/>
+                <HeaderLink route={"/projects/scoober-splat"} label={"Scoober Splat"}/>
+                <HeaderLink route={"/projects/automagical"} label={"Automagical"}/>
             </HeaderLink>
+            <HeaderLink route={"/blog"} label={"blog"}>
+                <HeaderLink route={"/blog/job-search-2024"} label={"job search 2024"}/>
+            </HeaderLink>
+            <HeaderLink route={"/resume"} label={"resume"}/>
             <HeaderLink route={"/contact"} label={"contact"}/>
         </>
     )

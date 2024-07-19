@@ -1,3 +1,38 @@
-﻿.blog-body p {
-    font-family: "Lucida Console", Monaco, monospace;
+﻿.blog-body {
+    width: min(600px, calc(100% - 80px));
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+
+    & h1 {
+        font-family: 'OCR-A', sans-serif;
+        font-size: larger;
+        margin-bottom: 1.75em;
+        font-weight: normal;
+    }
+    
+    & h2 {
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: x-large;
+        margin-top: 1.75em;
+        margin-bottom: 1.75em;
+        text-align: start;
+    }
+
+    & p, & a, & li {
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: medium;
+        line-height: 1.5;
+        word-wrap: break-word;
+        text-align: start;
+        color: white;
+    }
+    
+    & p {
+        margin-bottom: 1.75em;
+    }
+    
+    & ul > li {
+        margin-bottom: 0;
+    }
 }
