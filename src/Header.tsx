@@ -84,6 +84,7 @@ function HeaderLinks() {
             <HeaderLink route={"/projects"} label={"projects"}>
                 <HeaderLink route={"/projects/scoober-splat"} label={"Scoober Splat"}/>
                 <HeaderLink route={"/projects/automagical"} label={"Automagical"}/>
+                <HeaderLink route={"/projects/distortion-camera"} label={"distortion camera"}/>
             </HeaderLink>
             <HeaderLink route={"/blog"} label={"blog"}>
                 <HeaderLink route={"/blog/job-search-2024"} label={"job search 2024"}/>
