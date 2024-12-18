@@ -11,7 +11,6 @@ export default function Contact() {
             <ul>
                 <li>email me at <a href={"mailto:fnnbrr.dev@gmail.com"} target="_blank" rel={"noreferrer"}>fnnbrr.dev@gmail.com</a></li>
                 <li>message me on <a href={"https://www.linkedin.com/in/finnbarrocallahan/"} target="_blank" rel={"noreferrer"}>LinkedIn</a></li>
-                <li>dm me on Discord <a href={"https://discord.com/users/fnnbrr"} target="_blank" rel={"noreferrer"}>@fnnbrr</a></li>
                 <li>check out my projects on <a href={"https://github.com/fnnbrr"} target="_blank" rel={"noreferrer"}>GitHub</a></li>
             </ul>
         </div>
