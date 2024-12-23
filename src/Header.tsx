@@ -1,37 +1,42 @@
 import React, { useState, useEffect, useRef, PropsWithChildren, FocusEvent } from "react";
-import './Header.css'
-import { Link, NavLink, useLocation } from "react-router-dom"
+import './Header.css';
+import { Link, NavLink, useLocation } from "react-router-dom";
 import fnnbrrLogo from "./assets/fnnbrr_logo_outlined_2x.png";
 import hamburgerIcon from "./assets/hamburger_icon_white.svg";
 import xMark from "./assets/x-mark.svg";
 
-function MenuHamburger({children}: PropsWithChildren) {
+function MenuHamburger({ children }: PropsWithChildren)
+{
     const [isExpanded, setIsExpanded] = useState<boolean>(false);
     const parent = useRef<HTMLButtonElement>(null);
     let location = useLocation();
-    
-    useEffect(() => {
+
+    useEffect(() =>
+    {
         setIsExpanded(false);
     }, [location]);
-    
-    function OnClick(): void {
+
+    function OnClick(): void
+    {
         setIsExpanded(!isExpanded);
     }
-    
-    function OnBlur(event: FocusEvent<HTMLButtonElement>): void {
+
+    function OnBlur(event: FocusEvent<HTMLButtonElement>): void
+    {
         if (parent.current === null) return;
-        
-        if (!parent.current.contains(event.relatedTarget)) {
+
+        if (!parent.current.contains(event.relatedTarget))
+        {
             setIsExpanded(false);
         }
     }
-    
+
     const linksVertical = (
         <div className={"links-vertical"}>
             {children}
         </div>
     );
-    
+
     return (
         <button ref={parent} className={"hamburger-button"} onBlur={OnBlur}>
             <img
@@ -43,27 +48,31 @@ function MenuHamburger({children}: PropsWithChildren) {
                 {isExpanded ? linksVertical : null}
             </>
         </button>
-    )
+    );
 }
 
-interface HeaderLinkProps {
+interface HeaderLinkProps
+{
     route: string;
     label: string;
 }
 
-function HeaderLink({route, label, children}: PropsWithChildren<HeaderLinkProps>) {
-    function GetLinkClasses({isActive}: any): string {
+function HeaderLink({ route, label, children }: PropsWithChildren<HeaderLinkProps>)
+{
+    function GetLinkClasses({ isActive }: any): string
+    {
         let classes = "link-text";
 
         classes = classes.concat(isActive ? " active" : " inactive");
 
-        if (children !== undefined) {
+        if (children !== undefined)
+        {
             classes = classes.concat(" non-clickable");
         }
 
         return classes;
     }
-    
+
     return (
         <div className="link-expandable" tabIndex={0}>
             {children === undefined ? null : <span className={"link-child-indicator"}>&lt;</span>}
@@ -77,46 +86,50 @@ function HeaderLink({route, label, children}: PropsWithChildren<HeaderLinkProps>
     );
 }
 
-function HeaderLinks() {
+function HeaderLinks()
+{
     return (
         <>
-            <HeaderLink route={"/"} label={"home"}/>
+            <HeaderLink route={"/"} label={"home"} />
             <HeaderLink route={"/projects"} label={"projects"}>
-                <HeaderLink route={"/projects/scoober-splat"} label={"Scoober Splat"}/>
-                <HeaderLink route={"/projects/automagical"} label={"Automagical"}/>
-                <HeaderLink route={"/projects/distortion-camera"} label={"distortion camera"}/>
+                <HeaderLink route={"/projects/scoober-splat"} label={"Scoober Splat"} />
+                <HeaderLink route={"/projects/automagical"} label={"Automagical"} />
+                <HeaderLink route={"/projects/distortion-camera"} label={"distortion camera"} />
+                <HeaderLink route={"/projects/claim-denier"} label={"Health Insurance Claim Denier"} />
             </HeaderLink>
             <HeaderLink route={"/blog"} label={"blog"}>
-                <HeaderLink route={"/blog/job-search-2024"} label={"job search 2024"}/>
+                <HeaderLink route={"/blog/job-search-2024"} label={"job search 2024"} />
             </HeaderLink>
-            <HeaderLink route={"/resume"} label={"resume"}/>
-            <HeaderLink route={"/contact"} label={"contact"}/>
+            <HeaderLink route={"/resume"} label={"resume"} />
+            <HeaderLink route={"/contact"} label={"contact"} />
         </>
-    )
+    );
 }
 
-export default function Header() {
+export default function Header()
+{
     const header = useRef<HTMLDivElement>(null);
     let location = useLocation();
 
-    useEffect(() => {
+    useEffect(() =>
+    {
         // To scroll page to top and reset focus when changing routes
         header.current?.focus();
         header.current?.blur();
     }, [location]);
-    
+
     return (
         <div className={"Header"} ref={header} tabIndex={0}>
             <Link to="/" className={"Logo"}>
-                <img src={fnnbrrLogo} alt={"https://fnnbrr.com"}/>
+                <img src={fnnbrrLogo} alt={"https://fnnbrr.com"} />
             </Link>
-            
+
             <div className={"links-horizontal"}>
-                <HeaderLinks/>
+                <HeaderLinks />
             </div>
-            
+
             <MenuHamburger>
-                <HeaderLinks/>
+                <HeaderLinks />
             </MenuHamburger>
         </div>
     );
