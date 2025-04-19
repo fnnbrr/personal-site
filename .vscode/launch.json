@@ -23,6 +23,12 @@
         "group": "",
         "order": 2
       }
+    },
+    {
+      "name": "preview build server",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npx serve@latest out"
     }
   ],
   "compounds": [
@@ -34,6 +40,16 @@
         "hidden": false,
         "group": "",
         "order": 1
+      }
+    },
+    {
+      "name": "preview build",
+      "configurations": ["preview build server", "dev client"],
+      "stopAll": true,
+      "presentation": {
+        "hidden": false,
+        "group": "",
+        "order": 3
       }
     }
   ]
