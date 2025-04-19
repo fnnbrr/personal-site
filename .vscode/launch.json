@@ -12,6 +12,17 @@
       "type": "chrome",
       "request": "launch",
       "url": "http://localhost:3000"
+    },
+    {
+      "name": "build",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run build",
+      "presentation": {
+        "hidden": false,
+        "group": "",
+        "order": 2
+      }
     }
   ],
   "compounds": [

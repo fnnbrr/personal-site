@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'OCR-A';
-  src: url("./assets/OCRA.ttf") format('truetype');
+  font-family: "OCR-A";
+  src: url("/OCRA.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -9,8 +9,12 @@
   color-scheme: dark;
 }
 
-text, p, a, li, span {
-  font-family: 'OCR-A', sans-serif;
+text,
+p,
+a,
+li,
+span {
+  font-family: "OCR-A", sans-serif;
 }
 
 .Root {
@@ -19,8 +23,7 @@ text, p, a, li, span {
 
 .Root-header {
   background:
-          linear-gradient(135deg, steelblue, transparent),
-          url("./assets/noise.svg");
+    linear-gradient(135deg, steelblue, transparent), url("/noise.svg");
   min-height: calc(100svh - 60px);
   display: flex;
   flex-direction: column;

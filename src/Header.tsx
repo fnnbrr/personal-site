@@ -8,9 +8,9 @@ import React, {
   FocusEvent,
 } from "react";
 import "./Header.css";
-import fnnbrrLogo from "./assets/fnnbrr_logo_outlined_2x.png";
-import hamburgerIcon from "./assets/hamburger_icon_white.svg";
-import xMark from "./assets/x-mark.svg";
+import fnnbrrLogo from "../public/fnnbrr_logo_outlined_2x.png";
+import hamburgerIcon from "../public/hamburger_icon_white.svg";
+import xMark from "../public/x-mark.svg";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
@@ -40,7 +40,7 @@ function MenuHamburger({ children }: PropsWithChildren) {
   return (
     <button ref={parent} className={"hamburger-button"} onBlur={OnBlur}>
       <img
-        src={isExpanded ? xMark : hamburgerIcon}
+        src={isExpanded ? xMark.src : hamburgerIcon.src}
         alt={"navigation hamburger menu"}
         onClick={OnClick}
       ></img>
@@ -123,7 +123,7 @@ export default function Header() {
   return (
     <div className={"Header"} ref={header} tabIndex={0}>
       <Link href="/" className={"Logo"}>
-        <img src={fnnbrrLogo} alt={"https://fnnbrr.com"} />
+        <img src={fnnbrrLogo.src} alt={"https://fnnbrr.com"} />
       </Link>
 
       <div className={"links-horizontal"}>

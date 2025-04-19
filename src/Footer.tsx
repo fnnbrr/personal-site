@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.css";
-import emailIcon from "./assets/email-12-128.png";
-import linkedInIcon from "./assets/In-White-128.png";
-import githubIcon from "./assets/github-mark-white.svg";
+import emailIcon from "../public/email-12-128.png";
+import linkedInIcon from "../public/In-White-128.png";
+import githubIcon from "../public/github-mark-white.svg";
 import Link from "next/link";
 
 interface SocialIconProps {
@@ -38,15 +38,15 @@ export default function Footer() {
       </div>
       <div className={"SocialIconContainer flex-non-centered"}>
         <SocialIcon
-          iconUrl={emailIcon}
+          iconUrl={emailIcon.src}
           redirectUrl={"mailto:fnnbrr.dev@gmail.com"}
         />
         <SocialIcon
-          iconUrl={linkedInIcon}
+          iconUrl={linkedInIcon.src}
           redirectUrl={"https://www.linkedin.com/in/finnbarrocallahan/"}
         />
         <SocialIcon
-          iconUrl={githubIcon}
+          iconUrl={githubIcon.src}
           redirectUrl={"https://github.com/fnnbrr"}
         />
       </div>
