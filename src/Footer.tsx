@@ -34,7 +34,7 @@ export default function Footer() {
         <p>
           made by <Link href="/">fnnbrr</Link>
         </p>
-        <p>© 2024</p>
+        <p>© 2025</p>
       </div>
       <div className={"SocialIconContainer flex-non-centered"}>
         <SocialIcon
