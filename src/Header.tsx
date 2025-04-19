@@ -17,7 +17,7 @@ import Link from "next/link";
 function MenuHamburger({ children }: PropsWithChildren) {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const parent = useRef<HTMLButtonElement>(null);
-  const pathname = usePathname();
+  const pathname: string = usePathname();
 
   useEffect(() => {
     setIsExpanded(false);
@@ -59,25 +59,36 @@ function HeaderLink({
   label,
   children,
 }: PropsWithChildren<HeaderLinkProps>) {
-  // function GetLinkClasses({ isActive }: any): string {
-  //   let classes = "link-text";
+  const pathname: string = usePathname();
 
-  //   classes = classes.concat(isActive ? " active" : " inactive");
+  function GetLinkClasses(): string {
+    let classes = "link-text";
 
-  //   if (children !== undefined) {
-  //     classes = classes.concat(" non-clickable");
-  //   }
+    // Includes if a descendant of the route is active
+    let isRouteActive: boolean;
 
-  //   return classes;
-  // }
+    if (route === "/") {
+      // Special case for root so it doesn't match for every other route
+      isRouteActive = pathname === route;
+    } else {
+      isRouteActive = pathname.includes(route);
+    }
+
+    classes = classes.concat(isRouteActive ? " active" : " inactive");
+
+    if (children !== undefined) {
+      classes = classes.concat(" non-clickable");
+    }
+
+    return classes;
+  }
 
   return (
     <div className="link-expandable" tabIndex={0}>
       {children === undefined ? null : (
         <span className={"link-child-indicator"}>&lt;</span>
       )}
-      {/* TODO: set className according to if active using GetLinkClasses */}
-      <Link href={route} className="link-text">
+      <Link href={route} className={GetLinkClasses()}>
         {label}
       </Link>
       <div className={"link-child-container"}>{children}</div>
