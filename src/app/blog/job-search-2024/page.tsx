@@ -36,10 +36,10 @@ export default function JobSearch2024() {
           I started with this question since my goal was to make a career switch
           out of the games industry and into a field where I could have the
           social impact I wanted. I assumed that the culture of any workplace
-          making a positive impact would be one that I'd enjoy, and I felt that
-          any developer salary would be enough for my needs unless it was so far
-          below market rate that it implied that my skills weren't being valued.
-          The factors that I considered important in a job were:
+          making a positive impact would be one that I&apos;d enjoy, and I felt
+          that any developer salary would be enough for my needs unless it was
+          so far below market rate that it implied that my skills weren&apos;t
+          being valued. The factors that I considered important in a job were:
         </p>
         <ul>
           <li>culture</li>
@@ -47,7 +47,9 @@ export default function JobSearch2024() {
             <li>coworkers/team</li>
             <li>manager</li>
             <li>crunch and stress</li>
-            <li>'tech company' or 'company that uses tech'</li>
+            <li>
+              &apos;tech company&apos; or &apos;company that uses tech&apos;
+            </li>
           </ul>
           <li>
             compensation
@@ -90,38 +92,38 @@ export default function JobSearch2024() {
           certain that my efforts would make the world a better place. Tech
           nonprofits are rare, and over time I found that many are funded in a
           way that sustains them but does not allow for growth (i.e. hiring).
-          Compared to the for-profit sector, there's simply an order of
+          Compared to the for-profit sector, there&apos;s simply an order of
           magnitude less money to be found in philanthropy and government
-          grants. As a result, there's an order of magnitude more jobs at
+          grants. As a result, there&apos;s an order of magnitude more jobs at
           for-profit companies.
         </p>
         <p>
-          As a result, you'll likely find your next job at a for-profit company
-          where profitability competes with other factors that may matter more
-          to you. This is a grey area that I find hard to navigate, and it's
-          often unclear where to draw the line between what is and isn't
-          personally acceptable. I fully expect this to be a lifelong balancing
-          act between work I feel good about doing and work that can provide for
-          me.
+          As a result, you&apos;ll likely find your next job at a for-profit
+          company where profitability competes with other factors that may
+          matter more to you. This is a grey area that I find hard to navigate,
+          and it&apos;s often unclear where to draw the line between what is and
+          isn&apos;t personally acceptable. I fully expect this to be a lifelong
+          balancing act between work I feel good about doing and work that can
+          provide for me.
         </p>
         <h2>3. can I get those jobs?</h2>
         {/*    the biggest risk is hiring someone totally wrong, either incompetent or bad to work with*/}
         <p>
           I started my search optimistic about moving away from game dev and
           finding a job using a more mainstream tech stack. I was confident that
-          I'd quickly pick up this new stack, and I believed that the vast
+          I&apos;d quickly pick up this new stack, and I believed that the vast
           majority of my skills and knowledge were highly transferable. While my
           self-confidence and belief in transferable skills have remained, my
           optimism about mobility in the job market was totally flawed and led
-          to me adopting what I call "the pessimistic perspective."
+          to me adopting what I call &quot;the pessimistic perspective.&quot;
         </p>
         <p>
           This perspective is based on the idea that companies prioritize risk
           aversion over everything else when hiring, and by a huge margin. The
           risk of hiring the wrong person - they could be incompetent, not a
-          good team player, not focused on work, etc. - is so severe that you're
-          only competitive for a role if you can build a high degree of trust
-          by:
+          good team player, not focused on work, etc. - is so severe that
+          you&apos;re only competitive for a role if you can build a high degree
+          of trust by:
         </p>
         <ul>
           <li>having an exact skills and experience match</li>
@@ -130,11 +132,11 @@ export default function JobSearch2024() {
           <li>showing interest in the company and role</li>
         </ul>
         <p>
-          The exception to this rule is when you've already built trust with a
-          person who can vouch for you. Someone who knows you, especially if
-          you've already worked together, can make all the difference, and they
-          can also give you honest insights into what it's like at their
-          workplace.
+          The exception to this rule is when you&apos;ve already built trust
+          with a person who can vouch for you. Someone who knows you, especially
+          if you&apos;ve already worked together, can make all the difference,
+          and they can also give you honest insights into what it&apos;s like at
+          their workplace.
         </p>
         <p>
           This leads to my most important and positive takeaway from the

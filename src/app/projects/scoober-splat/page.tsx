@@ -33,18 +33,19 @@ export default function ScooberSplat() {
           allowFullScreen
         ></iframe>
         <p>
-          "Scoober Splat is a hilarious online party game of monster chase. With
-          up to 16 players, two people play as monstrous Goobers on the hunt.
-          Together, the rest of the Scoobers must repair the submarine in order
-          to escape certain death. After the dust settles, everyone gains a new
-          power-up and it starts all over again, with even more chaos!"
+          &quot;Scoober Splat is a hilarious online party game of monster chase.
+          With up to 16 players, two people play as monstrous Goobers on the
+          hunt. Together, the rest of the Scoobers must repair the submarine in
+          order to escape certain death. After the dust settles, everyone gains
+          a new power-up and it starts all over again, with even more
+          chaos!&quot;
         </p>
         <div className={"flex-break"} />
         <p>
-          "With cross-platform play on mobile devices and in your browser,
+          &quot;With cross-platform play on mobile devices and in your browser,
           playing with all of your friends is easy as dropping a link in your
           group chat. Work together and scream along with built-in proximity
-          chat!"
+          chat!&quot;
         </p>
         <iframe
           src="https://www.youtube.com/embed/rphtcQZmUlA?si=bWw3qZsUZ6nK1jAc"

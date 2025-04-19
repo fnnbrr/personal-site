@@ -59,17 +59,17 @@ function HeaderLink({
   label,
   children,
 }: PropsWithChildren<HeaderLinkProps>) {
-  function GetLinkClasses({ isActive }: any): string {
-    let classes = "link-text";
+  // function GetLinkClasses({ isActive }: any): string {
+  //   let classes = "link-text";
 
-    classes = classes.concat(isActive ? " active" : " inactive");
+  //   classes = classes.concat(isActive ? " active" : " inactive");
 
-    if (children !== undefined) {
-      classes = classes.concat(" non-clickable");
-    }
+  //   if (children !== undefined) {
+  //     classes = classes.concat(" non-clickable");
+  //   }
 
-    return classes;
-  }
+  //   return classes;
+  // }
 
   return (
     <div className="link-expandable" tabIndex={0}>
