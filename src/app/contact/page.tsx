@@ -1,10 +1,10 @@
 import React from "react";
 import "@/Root.css";
-import "@/routes/Contact.css";
+import styles from "@/app/contact/contact.module.css";
 
 export default function Contact() {
   return (
-    <div className={"Root-header Contact"}>
+    <div className={`Root-header ${styles.Contact}`}>
       <br />
       <br />
       <p>say hi!</p>

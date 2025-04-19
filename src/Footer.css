@@ -1,53 +1,56 @@
 ﻿.FooterLinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .SocialIconContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 15px;
 }
 
 .SocialIconImage {
-    max-height: 32px;
-    max-width: 32px;
+  max-height: 32px;
+  max-width: 32px;
 }
 
 .Footer {
-    background-color: #1f1f1f;
-    padding: 10px 20px 10px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    height: 40px;
-    
-    & img {
-        max-width: 100%;
-        height: auto;
-    }
+  background-color: #1f1f1f;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 40px;
 
-    & text, & p, & a {
-        color: lightgrey;
-        margin: 0;
-        font-size: min(3vw, 100%);
-    }
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  & text,
+  & p,
+  & a {
+    color: lightgrey;
+    margin: 0;
+    font-size: min(3vw, 100%);
+  }
 }
 
 .flex-non-centered {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
 }
 
 .flex-centered {
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
 }

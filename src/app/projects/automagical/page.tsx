@@ -1,5 +1,5 @@
 import React from "react";
-import "@/routes/Games.css";
+import "@/Games.css";
 
 export default function Automagical() {
   return (

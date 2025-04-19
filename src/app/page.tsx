@@ -1,6 +1,6 @@
 import React from "react";
-import "../Root.css";
-import "@/routes/Home.css";
+import "@/Root.css";
+import "@/Home.css";
 import headshot from "../../public/headshot.png";
 
 export default function Home() {

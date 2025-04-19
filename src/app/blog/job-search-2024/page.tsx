@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import "@/routes/Home.css";
-import "@/routes/Blogs.css";
+import "@/Home.css";
+import "@/Blogs.css";
 
 export default function JobSearch2024() {
   return (

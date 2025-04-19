@@ -1,5 +1,0 @@
-﻿.Pdf {
-    width: 100%;
-    height: calc(100vh - 127px);
-    margin-bottom: -5px;  /* Needed to prevent a white horizontal line at the bottom */
-}

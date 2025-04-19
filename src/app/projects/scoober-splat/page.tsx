@@ -1,14 +1,14 @@
 import React from "react";
 import "@/Root.css";
-import "@/routes/ScooberSplat.css";
+import styles from "@/app/projects/scoober-splat/scoober-splat.module.css";
 
 export default function ScooberSplat() {
   return (
-    <div className={"Root-header ScooberSplat"}>
+    <div className={`Root-header ${styles.ScooberSplat}`}>
       <img
         src={"/Scoober Splat Logo.png"}
         alt={"Scoober Splat Logo"}
-        className={"ScooberSplatLogo"}
+        className={styles.ScooberSplatLogo}
       />
       <br />
       <p>
@@ -23,11 +23,11 @@ export default function ScooberSplat() {
         </a>
         .
       </p>
-      <div className={"grid"}>
+      <div className={styles.grid}>
         <iframe
           src="https://www.youtube.com/embed/6idYouyN1MA?si=HDEByAXBNkl7IuUm"
           title="YouTube video player"
-          className={"Video"}
+          className={styles.Video}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
@@ -50,7 +50,7 @@ export default function ScooberSplat() {
         <iframe
           src="https://www.youtube.com/embed/rphtcQZmUlA?si=bWw3qZsUZ6nK1jAc"
           title="YouTube video player"
-          className={"Video"}
+          className={styles.Video}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
@@ -61,7 +61,7 @@ export default function ScooberSplat() {
       <img
         src={"/Scoober Run.gif"}
         alt={"Scoober Run Animation"}
-        className={"ScooberSplatRun"}
+        className={styles.ScooberSplatRun}
       />
       <br />
       <p>My work on Scoober Splat included:</p>

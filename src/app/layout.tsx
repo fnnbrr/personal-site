@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import "../Root.css";
+import "@/Root.css";
 import Header from "@/Header";
 import Footer from "@/Footer";
 
 export const metadata: Metadata = {
-  title: "fnnbrr",
-  description: "Finnbarr O'Callahan",
+  title: "fnnbrr - Finnbarr O'Callhan",
+  description: "Finnbarr O'Callahan, Software Engineer in Toronto, Canada",
 };
 
 export default function RootLayout({

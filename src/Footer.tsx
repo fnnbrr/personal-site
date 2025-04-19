@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "@/Footer.css";
 import emailIcon from "../public/email-12-128.png";
 import linkedInIcon from "../public/In-White-128.png";
 import githubIcon from "../public/github-mark-white.svg";
