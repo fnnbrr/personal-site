@@ -4,7 +4,7 @@ import Header from "@/Header";
 import Footer from "@/Footer";
 
 export const metadata: Metadata = {
-  title: "fnnbrr - Finnbarr O'Callhan",
+  title: "fnnbrr - Finnbarr O'Callahan",
   description: "Finnbarr O'Callahan, Software Engineer in Toronto, Canada",
 };
 
