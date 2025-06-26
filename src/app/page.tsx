@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <div className={"Root-header Home"}>
       <div className={"heading"}>
-        <p>
+        <h3>
           Finnbarr
           <br />
           O&apos;Callahan
-        </p>
+        </h3>
         <img src={headshot.src} className={"headshot"} alt={"headshot"} />
       </div>
       <ul>

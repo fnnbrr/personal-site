@@ -7,7 +7,7 @@ export default function Contact() {
     <div className={`Root-header ${styles.Contact}`}>
       <br />
       <br />
-      <p>say hi!</p>
+      <h2>say hi!</h2>
       <ul>
         <li>
           email me at{" "}

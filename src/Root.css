@@ -1,8 +1,11 @@
 @font-face {
   font-family: "OCR-A";
   src: url("/OCRA.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tomorrow-Regular";
+  src: url("/Tomorrow-Regular.ttf") format("truetype");
 }
 
 :root {
@@ -13,12 +16,22 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "OCR-A", sans-serif;
+  font-weight: 400;
+}
+
 text,
 p,
 a,
 li,
 span {
-  font-family: "OCR-A", sans-serif;
+  font-family: "Tomorrow-Regular", sans-serif;
 }
 
 .Root {
