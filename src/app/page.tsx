@@ -16,13 +16,10 @@ export default function Home() {
       </div>
       <ul>
         <li>software engineer in Toronto, Canada</li>
+        <li>former game studio co-founder and tech lead</li>
         <li>
-          Unity Developer at Sago Mini, previously co-founder and lead developer
-          of an indie game studio
-        </li>
-        <li>
-          interested in building tech that supports education and freedom of
-          information
+          interested in building tech that supports education, privacy, and
+          sustainability
         </li>
       </ul>
     </div>

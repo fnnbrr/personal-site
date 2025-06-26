@@ -1,36 +1,37 @@
 ﻿.Home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 5vh;
-    
-    & ul {
-        max-width: 800px;
-        margin-right: 20px;
-    }
-    
-    & li {
-        text-align: left;
-        font-size: 1em;
-        margin-bottom: 15px;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 5vh;
+
+  & ul {
+    max-width: 800px;
+    margin-right: 20px;
+  }
+
+  & li {
+    text-align: left;
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
 }
 
 .heading {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-size: 1.5em;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: right;
 }
 
 .headshot {
-    width: min(50%, 256px);
-    mask-image: radial-gradient(circle, black 65%, rgba(0, 0, 0, 0.0) 70%);
+  width: min(50%, 256px);
+  mask-image: radial-gradient(circle, black 65%, rgba(0, 0, 0, 0) 70%);
 }
