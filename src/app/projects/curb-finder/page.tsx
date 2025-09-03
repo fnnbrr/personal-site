@@ -7,7 +7,7 @@ export default function CurbFinder() {
       <iframe
         className="ItchEmbed"
         title="CurbFinder"
-        src="https://curb-finder.pages.dev?demo"
+        src="https://curbfinder.app?demo"
         allow="geolocation; camera; clipboard-write"
       ></iframe>
     </div>
