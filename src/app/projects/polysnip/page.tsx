@@ -7,7 +7,7 @@ export default function Polysnip() {
       <iframe
         className="ItchEmbed"
         title="polysnip"
-        src="https://polysnip.pages.dev"
+        src="https://polysnip.io"
         allow="fullscreen"
       ></iframe>
     </div>
