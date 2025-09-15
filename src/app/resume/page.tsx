@@ -6,6 +6,11 @@ export default function Resume() {
       type="application/pdf"
       data={"/Finnbarr O'Callahan Resume.pdf"}
       className={styles.Pdf}
-    ></object>
+    >
+      <iframe
+        className={styles.fallback}
+        src="/Finnbarr O'Callahan Resume.html"
+      />
+    </object>
   );
 }
