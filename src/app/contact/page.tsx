@@ -12,11 +12,11 @@ export default function Contact() {
         <li>
           email me at{" "}
           <a
-            href={"mailto:fnnbrr.dev@gmail.com"}
+            href={"mailto:hello@fnnbrr.com"}
             target="_blank"
             rel={"noreferrer"}
           >
-            fnnbrr.dev@gmail.com
+            hello@fnnbrr.com
           </a>
         </li>
         <li>
