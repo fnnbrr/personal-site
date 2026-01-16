@@ -112,6 +112,10 @@ function HeaderLinks() {
           label={"Health Insurance Claim Denier"}
         />
         <HeaderLink route={"/projects/polysnip"} label={"polysnip"} />
+        <HeaderLink
+          route={"/projects/summer-simulator"}
+          label={"summer simulator"}
+        />
         <HeaderLink route={"/projects/curb-finder"} label={"CurbFinder"} />
       </HeaderLink>
       <HeaderLink route={"/blog"} label={"blog"}>
